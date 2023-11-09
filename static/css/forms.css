@@ -1,0 +1,88 @@
+/* form {
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  form {
+    background-color: #dad6d6;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #thankYouMessage {
+    display: none;
+    color: #161616;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form input{
+    border: 2px #161616;
+    margin-top: 10px;
+    padding: 10px;
+    width: 700px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  } 
+  /* label {
+    display: none;
+  }  */
+  .my-form{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .my-form input,
+  .my-form select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .my-form input[type='submit']{
+    background-color: #4CAF50;
+    color: wheat;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-form input[type="submit"]{
+    background-color: #45a049;
+  }
+
+  form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+    color: #000000;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    border: 3px rgb(39, 39, 39);
+}
+textarea{
+    resize: none;
+    height: 200px;
+}

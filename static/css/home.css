@@ -1,0 +1,242 @@
+
+:root{
+    --bg-color:#ffffff;
+    --secound-bg-color: #f9f9f9;
+    --text-color: #fff;
+    --secound-color: #161616;
+    --main-color:#efb004;
+    --other-color: #6a6a6a;
+    --big-font: 5.7rem;
+    --h2-font: 3.8rem;
+    --p-font: 1rem;
+}
+section{
+    padding: 120px 16%;
+}
+
+.home{
+    background: url('../images/home/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%; 
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-bottom:4rem;
+
+}
+.home-text{
+    padding-top: 120px;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0 0 25px;
+}
+.home-text h4{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 1.21;
+    font-weight:700;
+    margin-bottom: 40px;
+}
+.btn{
+    display: inline-block;
+    font-size:14px;
+    font-weight:600;
+    padding: 16px 33px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition: ease .30s;
+    
+}
+.btn:hover{
+    transform: translateY(-10px);
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+
+/*about css*/
+.about{
+    background: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+}
+.about-img img{
+    max-width: 100%;
+    width: 490px;
+    height: auto;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+
+color: var(--secound-color);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+.about-text h5{
+    color: var(--secound-color);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px; 
+}
+.about-text p{
+    font-size: var(--P-font);
+    font-weight: 400;
+    max-width: 570px;
+    line-height: 1.8;
+    color: var(--other-color);
+    margin-bottom: 2.5rem;
+}
+
+/* service section */
+
+.services{
+    background: var(--secound-bg-color);
+}
+.heading{
+    text-align:center;
+}
+.heading h6{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom:15px;
+    line-height: 1;
+}
+.heading h2{
+    font-size: var(--h2-font);
+    color: var(--secound-color);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.6rem;
+}
+.heading p{
+    font-size:var(--p-font);
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--other-color);
+}
+
+/* charity */
+.col {
+    position:relative;
+}
+.col img{
+    max-width: 100%;
+    width:620px;
+    height: auto;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: all .35s;
+}
+.layer:hover{
+    background: linear-gradient(rgba(22,22,22, 0.06)0%, #ffc400 100%);
+}
+.layer h3{
+    position: absolute;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .35s;  
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+.contact{
+    padding: 40px 15%;
+    height: 100%;
+    width: 100%;
+    background: #101010;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-img img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
+.contact-form h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contact-form span{
+    color: var(--main-color);
+}
+.contact-form p{
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form #textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form #textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form form .btn{
+    display: inline-block;
+    background: var(--main-color);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.contact-form form .btn:hover{
+    border: 2px solid var(--main-color);
+    color: #fff;
+    background: transparent;
+}
+
+
